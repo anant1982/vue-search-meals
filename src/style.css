@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .mobile-menu .bm-burger-button {
+    @apply left-auto right-5;
+  }
+  .mobile-menu .bm-burger-button .line-style {
+    @apply h-0.5;
+  }
+  .mobile-menu .bm-menu .bm-cross-button {
+    @apply bg-[url('./assets/cross.png')] bg-contain bg-center bg-no-repeat top-5 right-5;
+  }
+  .mobile-menu .bm-menu .bm-cross-button .bm-cross {
+    @apply hidden;
+  }
+  .mobile-menu .bm-menu .bm-item-list > * {
+    @apply px-0 w-full text-white;
+  }
+  .mobile-menu .bm-burger-button {
+    @apply h-6;
+  }
+}
